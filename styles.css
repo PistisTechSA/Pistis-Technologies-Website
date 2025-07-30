@@ -1,0 +1,112 @@
+:root {
+      --primary-color: #0057a3;
+      --secondary-color: #6fc13e;
+      --text-dark: #333;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    .navbar {
+        background-color: #fafafa; /* shade of white */
+    }
+
+    .navbar-brand span {
+        color: #000;
+    }
+
+    .navbar-nav .nav-link {
+        color: #000 !important;
+        transition: color 0.3s ease;
+        font-size: 1.05rem; /* default is ~1rem */
+    }
+
+    .navbar-nav .nav-link:hover {
+        color: #0057a3 !important; /* Deep blue from logo */
+    }
+
+    .hero {
+        background: url('pexels-fauxels-3184465.jpg') no-repeat center center/cover;
+        height: 100vh;
+        position: relative;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        display: flex;
+        align-items: flex-end; /* Push content to bottom */
+        justify-content: center;
+        padding-bottom: 85px; /* Adjust this to control how far from bottom */
+    }
+
+    .hero-text {
+        text-align: center;
+        color: #fafafa;
+        z-index: 2;
+        text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+    }
+
+    .hero-text h1 {
+        font-weight: 600; /* Try 700, 800 or 900 depending on visibility */
+        font-size: 2.5rem; /* Optional: increase size for more impact */
+    }
+
+    .hero-text p {
+        font-weight: 400; /* A bit lighter than the heading, but still bold */
+        font-size: 1.3rem;
+    }
+
+    .overlay {
+        position: absolute;
+        top: 0; left: 0;
+        width: 100%; height: 100%;
+        background: rgba(0, 0, 0, 0.4); /* adjust for darker/lighter effect */
+        z-index: 1;
+    }
+
+    .hero .container {
+        position: relative;
+        z-index: 2;
+        margin-top: 60vh; /* starts content around 60% of screen height */
+    }
+
+    .section {
+      padding: 80px 0;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .about-card {
+        transition: all 0.3s ease-in-out;
+        border: 1px solid transparent;
+        box-shadow: 0 4px 10px rgba(17, 61, 127, 0.05);
+        /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05); */
+        border-radius: 8px;
+    }
+
+    .about-card:hover {
+        border: 1px solid #0057a3;
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+        transform: scale(1.02);
+    }   
+
+    form input,
+    form textarea {
+        border-radius: 6px;
+        padding: 12px;
+        border: 1px solid #ccc;
+    }
+
+    form button:hover {
+        background-color: #333;
+    }
+
+    footer {
+      background-color: #fafafa;
+      color: #000;
+      text-align: center;
+      padding: 20px 0;
+    }
