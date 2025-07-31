@@ -91,7 +91,12 @@
         border: 1px solid #0057a3;
         box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
         transform: scale(1.02);
-    }   
+    }  
+
+      html {
+        scroll-behavior: smooth;
+        scroll-padding-top: 80px; /* Match your navbar height */
+    }
 
     form input,
     form textarea {
