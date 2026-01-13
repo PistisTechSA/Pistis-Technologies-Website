@@ -9,7 +9,7 @@
   <meta property="og:url" content="https://pististechnologies.co.za/" />
   <meta property="og:type" content="website" />
   <title>Pistis Technologies | Web Development & IT Support in South Africa</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css">
   <link rel="canonical" href="https://pististechnologies.co.za/">
   <script type="application/ld+json">
@@ -25,15 +25,15 @@
       "serviceOffered": [
         {
           "@type": "Service",
-          "name": "Web Development",
+          "name": "Web Development"
         },
         {
           "@type": "Service",
-          "name": "Website Maintenance",
+          "name": "Website Maintenance"
         },
         {
           "@type": "Service",
-          "name": "IT Support",
+          "name": "IT Support"
         }
       ]
     }
@@ -210,18 +210,21 @@
     </div>
   </footer>
 
-  <script>
-  document.querySelectorAll('.navbar-nav .nav-link').forEach(link => {
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+  const navbarCollapse = document.getElementById('navbarNav');
+
+  navLinks.forEach(link => {
     link.addEventListener('click', () => {
-      const navbarCollapse = document.querySelector('.navbar-collapse');
-      if (navbarCollapse.classList.contains('show')) {
-        new bootstrap.Collapse(navbarCollapse).toggle();
+      const bsCollapse = bootstrap.Collapse.getInstance(navbarCollapse);
+      if (bsCollapse) {
+        bsCollapse.hide();
       }
     });
   });
+});
 </script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-A3A6kYfzH/jHE+YrpV+uR6UmOIgYFbTQdoyWbPIPb4SBoW6H2efljQ/4u0WT+FzN"
-      crossorigin="anonymous"></script>
 </body>
 </html>
