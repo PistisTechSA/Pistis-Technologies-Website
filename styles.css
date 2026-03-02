@@ -109,9 +109,26 @@
         background-color: #333;
     }
 
+    p2 {
+        font-weight: lighter;
+    }
+
     footer {
       background-color: #fafafa;
       color: #000;
-      text-align: center;
+      /* keep overall footer centered if needed; inner container handles left alignment */
       padding: 20px 0;
+    }
+
+    /* Footer icon styling */
+    .footer-icon {
+      width: 24px;
+      height: 24px;
+      fill: #000;
+      vertical-align: middle;
+    }
+
+    .footer-icon-link {
+      margin-right: 10px;
+      display: inline-block;
     }
