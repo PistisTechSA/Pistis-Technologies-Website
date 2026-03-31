@@ -179,6 +179,7 @@
     </div>
 
     <form action="https://formspree.io/f/xdkdzqgw" method="POST">
+      <input type="text" name="_gotcha" style="display:none">
       <div class="row g-3 justify-content-center">
     
     <!-- Name field full width -->
@@ -195,6 +196,25 @@
     <div class="col-12 col-md-8">
       <textarea name="message" class="form-control" rows="5" placeholder="Your Message" required></textarea>
     </div>
+
+    <!-- POPIA Consent Checkbox -->
+    <div class="col-12 col-md-8">
+  <div class="d-flex align-items-start">
+    
+    <input 
+      class="form-check-input me-2 mt-1" 
+      type="checkbox" 
+      name="consent" 
+      id="consentCheck" 
+      required
+    >
+
+    <label class="form-check-label small" for="consentCheck">
+      I consent to my personal information being collected and processed in accordance with the Protection of Personal Information Act (POPIA) for the purpose of responding to my enquiry.
+    </label>
+
+  </div>
+</div>
     
     <!-- Centered button -->
     <div class="col-12 text-center">
