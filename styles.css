@@ -93,9 +93,12 @@
         transform: scale(1.02);
     }  
 
-      html {
-        scroll-behavior: smooth;
-        scroll-padding-top: 80px; /* Match your navbar height */
+    html {
+  scroll-behavior: smooth;
+    }
+
+    section[id] {
+  scroll-margin-top: 100px;
     }
 
     form input,
@@ -111,6 +114,9 @@
 
     p2 {
         font-weight: lighter;
+    }
+    .diffbackground{
+    background-color: #fafafa;
     }
 
     footer {
@@ -132,3 +138,133 @@
       margin-right: 10px;
       display: inline-block;
     }
+
+
+.project-card,
+.review-card {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid transparent;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.07);
+  transition: all 0.3s ease;
+}
+
+.project-card:hover,
+.review-card:hover {
+  border: 1px solid #000;
+  transform: translateY(-6px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.project-img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.review-card {
+  padding: 30px;
+  text-align: center;
+}
+
+.stars {
+  color: #f5b301;
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+}
+
+.logo-slider {
+  overflow: hidden;
+  width: 100%;
+}
+
+.logo-track {
+  display: flex;
+  width: max-content;
+  animation: scrollLogos 40s linear infinite;
+}
+
+.logo-group {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  padding-right: 60px;
+}
+
+.logo-group img {
+  max-height: 70px;
+  max-width: 160px;
+  object-fit: contain;
+  filter: grayscale(100%);
+  transition: filter 0.3s ease;
+}
+
+.logo-group img:hover {
+  filter: grayscale(0%);
+}
+
+.review-source {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.review-source span {
+  font-size: 0.9rem;
+  color: #666;
+  font-weight: 500;
+}
+
+@keyframes scrollLogos {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(calc(-50%));
+  }
+}
+
+@media (max-width: 768px) {
+
+  .project-img {
+    height: 180px;
+  }
+
+  .logo-group {
+    gap: 30px;
+    padding-right: 30px;
+  }
+
+  .logo-group img {
+    max-height: 45px;
+    max-width: 100px;
+  }
+
+  .projects-scroll {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    padding-bottom: 15px;
+  }
+
+  .projects-scroll > .col-md-4 {
+    flex: 0 0 100%;
+    max-width: 100%;
+    scroll-snap-align: start;
+  }
+
+  .projects-scroll::-webkit-scrollbar {
+    display: none;
+  }
+
+  .projects-scroll {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+}
