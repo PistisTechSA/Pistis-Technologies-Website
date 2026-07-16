@@ -164,11 +164,20 @@
   <section id="projects" class="py-5 bg-light">
   <div class="container">
     <div class="section-title text-center mb-5">
+      <p class="swipe-hint d-md-none">
+  ← Swipe to view more →
+</p>
       <h2>Our Projects</h2>
       <p class="text-muted">A few websites developed under Pistis Technologies.</p>
     </div>
 
-    <div class="row g-4 projects-scroll">
+    <div class="projects-wrapper">
+
+  <button class="scroll-btn left" onclick="scrollProjects(-1)">
+    <i class="fa-solid fa-chevron-left"></i>
+  </button>
+
+  <div class="row g-4 projects-scroll" id="projectsTrack">
       <div class="col-md-4">
         <div class="project-card h-100">
           <img src="images/emily-bakes.png" alt="Emily Bakes Website" class="project-img">
@@ -201,6 +210,13 @@
           </div>
         </div>
       </div>
+        </div>
+
+  <button class="scroll-btn right" onclick="scrollProjects(1)">
+    <i class="fa-solid fa-chevron-right"></i>
+  </button>
+
+</div>
     </div>
   </div>
 </section>
@@ -209,11 +225,20 @@
 <section id="reviews" class="py-5">
   <div class="container">
     <div class="section-title text-center mb-5">
+      <p class="swipe-hint d-md-none">
+  ← Swipe to view more →
+</p>
       <h2>Client Reviews</h2>
       <p class="text-muted">What people say about working with Pistis Technologies.</p>
     </div>
 
-    <div class="row g-4">
+    <div class="projects-wrapper">
+
+  <button class="scroll-btn left" onclick="scrollReviews(-1)">
+    <i class="fa-solid fa-chevron-left"></i>
+  </button>
+
+  <div class="row g-4 reviews-scroll" id="reviewsTrack">
 
       <!-- Review 1 -->
       <div class="col-md-4">
@@ -295,7 +320,13 @@
 
         </div>
       </div>
+        </div>
 
+  <button class="scroll-btn right" onclick="scrollReviews(1)">
+    <i class="fa-solid fa-chevron-right"></i>
+  </button>
+
+</div>
     </div>
   </div>
 </section>
@@ -504,6 +535,24 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 });
+
+function scrollProjects(direction) {
+    const container = document.getElementById('projectsTrack');
+
+    container.scrollBy({
+        left: direction * 350,
+        behavior: 'smooth'
+    });
+}
+
+function scrollReviews(direction) {
+    const container = document.getElementById('reviewsTrack');
+
+    container.scrollBy({
+        left: direction * 350,
+        behavior: 'smooth'
+    });
+}
 </script>
 </body>
 </html>
