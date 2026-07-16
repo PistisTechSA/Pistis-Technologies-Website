@@ -361,7 +361,39 @@
   display: none;
 }
 
+.project-links {
+  margin-top: auto; /* pushes it to bottom */
+  display: flex;
+  gap: 15px;
+}
 
+
+.project-links a {
+  font-size: 0.9rem;
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.project-links a:hover {
+  text-decoration: underline;
+}
+
+.project-meta {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.project-live-link {
+  color: var(--bs-primary);
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.project-live-link:hover {
+  text-decoration: underline;
+}
 
 @media (max-width: 768px) {
 
