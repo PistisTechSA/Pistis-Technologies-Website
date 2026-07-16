@@ -323,45 +323,6 @@
     position: relative;
 }
 
-.scroll-btn {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 5;
-
-    width: 42px;
-    height: 42px;
-
-    border: none;
-    border-radius: 50%;
-
-    background: #fff;
-    box-shadow: 0 2px 12px rgba(0,0,0,.15);
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-}
-
-.scroll-btn.left {
-    left: -20px;
-}
-
-.scroll-btn.right {
-    right: -20px;
-}
-
-.scroll-btn:hover {
-    background: #0057a3;
-    color: #fff;
-}
-
-.scroll-btn {
-  background: #fff;
-  color: #000;
-}
-
 @media (hover: hover) {
   .scroll-btn:hover {
     background: var(--bs-primary);
@@ -405,6 +366,23 @@
 
 .project-live-link:hover {
   text-decoration: underline;
+}
+
+.swipe-hint {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #6c757d;
+  margin-bottom: 15px;
+  animation: swipePulse 2s infinite;
+}
+
+@keyframes swipePulse {
+  0%, 100% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
 }
 
 @media (max-width: 768px) {
@@ -453,14 +431,4 @@
     -ms-overflow-style: none;
   }
 
-  /* Mobile arrows only */
-  .scroll-btn {
-    display: flex;
-  }
-}
-
-@media (min-width: 769px) {
-  .scroll-btn {
-    display: none;
-  }
 }
