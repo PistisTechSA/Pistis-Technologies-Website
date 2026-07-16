@@ -358,6 +358,18 @@
 }
 
 .scroll-btn {
+  background: #fff;
+  color: #000;
+}
+
+@media (hover: hover) {
+  .scroll-btn:hover {
+    background: var(--bs-primary);
+    color: #fff;
+  }
+}
+
+.scroll-btn {
   display: none;
 }
 
