@@ -69,6 +69,7 @@
         <li class="nav-item mx-2"><a class="nav-link" href="#about">About</a></li>
         <li class="nav-item mx-2"><a class="nav-link" href="#services">Services</a></li>
         <li class="nav-item mx-2"><a class="nav-link" href="#projects">Projects</a></li>
+        <li class="nav-item mx-2"><a class="nav-link" href="#partners">Partnership</a></li>
         <li class="nav-item mx-2"><a class="nav-link" href="#contact">Contact</a></li>
       </ul>
     </div>
@@ -164,71 +165,87 @@
 </section>
 
   <!-- Projects -->
-  <section id="projects" class="py-5 bg-light">
+<section id="projects" class="py-5 bg-light">
   <div class="container">
     <div class="section-title text-center mb-5">
       <h2>Our Projects</h2>
       <p class="text-muted">A few systems developed under Pistis Technologies.</p>
-      <p class="swipe-hint d-md-none">
-        ← Swipe to view more →
-      </p>
+      <p class="swipe-hint d-md-none">← Swipe to view more →</p>
     </div>
 
     <div class="projects-wrapper">
+      <button class="scroll-btn scroll-prev" id="projectsPrev" aria-label="Previous projects">
+        <i class="fa-solid fa-chevron-left"></i>
+      </button>
 
-      <div class="row g-4 projects-scroll" id="projectsTrack">
-          <div class="col-md-4">
-            <div class="project-card h-100">
-              <img src="images/emily-bakes.png" alt="Emily Bakes Website" class="project-img">
-              <div class="p-4">
-                <h5>Emily Bakes</h5>
-                <p>A responsive blog system showcasing baked goods, recipes, contact details, and brand information.</p>
-                <div class="project-meta">
-                  <span class="badge bg-dark">PERN Stack</span>
+      <div class="projects-scroll" id="projectsTrack" tabindex="0" role="region" aria-label="Projects">
 
-                  <a href="https://emilybakesblog.onrender.com/" target="_blank" class="project-live-link">
-                    Live
-                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                  </a>
-                </div>
+        <div class="project-item">
+          <div class="project-card h-100">
+            <img src="images/emily-bakes.png" alt="Emily Bakes Website" class="project-img">
+            <div class="p-4">
+              <h5>Emily Bakes</h5>
+              <p>A responsive blog system showcasing baked goods, recipes, contact details, and brand information.</p>
+              <div class="project-meta">
+                <span class="badge bg-dark">PERN Stack</span>
+                <a href="https://emilybakesblog.onrender.com/" target="_blank" rel="noopener" class="project-live-link">
+                  Live <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
               </div>
             </div>
           </div>
-
-          <div class="col-md-4">
-            <div class="project-card h-100">
-              <img src="images/jjr.png" alt="Jesus Journey Runners Website" class="project-img">
-              <div class="p-4">
-                <h5>Jesus Journey Runners</h5>
-                <p>A faith-based NGO system with content management, events, gallery, and admin functionality.</p>
-                <div class="project-meta">
-                  <span class="badge bg-dark">.NET Stack</span>
-
-                  <a href="https://jesusjourneyrunners.co.za" target="_blank" class="project-live-link">
-                    Live
-                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-4">
-            <div class="project-card h-100">
-              <img src="images/pistis-tech.jpeg" alt="Pistis Technologies Website" class="project-img">
-              <div class="p-4">
-                <h5>Pistis Technologies</h5>
-                <p>A modern static company website built to present services, values, projects, and contact information.</p>
-                <span class="badge bg-dark">HTML CSS Bootstrap</span>
-              </div>
-            </div>
-          </div>
-
         </div>
+
+        <div class="project-item">
+          <div class="project-card h-100">
+            <img src="images/jjr.png" alt="Jesus Journey Runners Website" class="project-img">
+            <div class="p-4">
+              <h5>Jesus Journey Runners</h5>
+              <p>A faith-based NGO system with content management, events, gallery, and admin functionality.</p>
+              <div class="project-meta">
+                <span class="badge bg-dark">.NET Stack</span>
+                <a href="https://jesusjourneyrunners.co.za" target="_blank" rel="noopener" class="project-live-link">
+                  Live <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-item">
+          <div class="project-card h-100">
+            <img src="images/goshenbcadvisory.png" alt="Goshen Business and Career Advisory Services Website" class="project-img">
+            <div class="p-4">
+              <h5>Goshen Business and Career Advisory Services</h5>
+              <p>A CMS-driven platform for an advisory firm, organised around Sectors, Services, Advisory, Programmes, and Insights.</p>
+              <div class="project-meta">
+                <span class="badge bg-dark">.NET Stack</span>
+                <a href="https://goshenbcadvisory.co.za" target="_blank" rel="noopener" class="project-live-link">
+                  Live <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-item">
+          <div class="project-card h-100">
+            <img src="images/pistis-tech.jpeg" alt="Pistis Technologies Website" class="project-img">
+            <div class="p-4">
+              <h5>Pistis Technologies</h5>
+              <p>A modern static company website built to present services, values, projects, and contact information.</p>
+              <span class="badge bg-dark">HTML CSS Bootstrap</span>
+            </div>
+          </div>
+        </div>
+
       </div>
+
+      <button class="scroll-btn scroll-next" id="projectsNext" aria-label="Next projects">
+        <i class="fa-solid fa-chevron-right"></i>
+      </button>
     </div>
   </div>
-</div>
 </section>
 
 <!-- Reviews -->
@@ -330,6 +347,60 @@
   </div>
 </section>
 
+<!-- Partnership -->
+<section id="partners" class="py-5">
+  <div class="container">
+    <div class="section-title text-center mb-5">
+      <h2>Partnership</h2>
+      <p class="text-muted">Strengthening organisations and building lasting relationships.</p>
+    </div>
+
+    <div class="partner-card">
+      <div class="row g-0">
+
+        <!-- Left panel -->
+        <div class="col-lg-4 partner-left">
+          <span class="partner-label">Partnership</span>
+          <h3>Pistis Technologies × Goshen</h3>
+          <div class="partner-logo">
+            <img src="images/GoshenLogo.png" alt="Goshen Business and Career Advisory Services logo">
+          </div>
+          <a href="https://goshenbcadvisory.co.za" target="_blank" rel="noopener" class="partner-link">
+            Visit Goshen's Website <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+
+        <!-- Right panel -->
+        <div class="col-lg-8 partner-right">
+          <span class="partner-label">Stronger Organisations × Smarter Systems</span>
+          <p class="partner-lead">
+            We've partnered with Goshen Business and Career Advisory Services to give organisations more than a digital solution. Together, we help you build the systems and the foundations behind them.
+          </p>
+          <p>
+            Alongside our digital systems, automation, and technology solutions, our partnership with Goshen supports organisations in strengthening their governance, leadership alignment, capacity, and processes. The result is technology that fits how your organisation actually works, and an organisation that is ready to make the most of it.
+          </p>
+          <p>
+            At Pistis, we believe in building relationships, not collecting clients. We take the time to understand your organisation, walk with you through the work, and stay invested in your growth long after a project is delivered. This partnership extends that commitment.
+          </p>
+
+          <hr>
+
+          <h6 class="partner-subtitle">What We Offer Together</h6>
+          <ul class="partner-tags">
+            <li>Digital Systems</li>
+            <li>Workflow Automation</li>
+            <li>Governance Strengthening</li>
+            <li>Leadership Alignment</li>
+            <li>Organisational Capacity</li>
+            <li>Process Improvement</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- Trustedby -->
 <section id="trusted-by" class="py-5 diffbackground">
   <div class="container">
@@ -346,6 +417,7 @@
           <img src="images/emily-bakes-logo.png" alt="Emily Bakes">
           <img src="images/jjr-logo.png" alt="Jesus Journey Runners">
           <img src="images/Pistis-tech-logo.png" alt="Pistis Technologies">
+          <img src="images/goshen-logo-bg.png" alt="Goshen Business and Career Advisory Services">
         </div>
 
         <div class="logo-group" aria-hidden="true">
@@ -355,6 +427,7 @@
           <img src="images/emily-bakes-logo.png" alt="">
           <img src="images/jjr-logo.png" alt="">
           <img src="images/Pistis-tech-logo.png" alt="">
+          <img src="images/goshen-logo-bg.png" alt="">
         </div>
 
         <div class="logo-group" aria-hidden="true">
@@ -364,6 +437,7 @@
           <img src="images/emily-bakes-logo.png" alt="">
           <img src="images/jjr-logo.png" alt="">
           <img src="images/Pistis-tech-logo.png" alt="">
+          <img src="images/goshen-logo-bg.png" alt="">
         </div>
       </div>
     </div>
@@ -533,6 +607,31 @@ document.addEventListener('DOMContentLoaded', function () {
       bsCollapse.hide();
     });
   });
+});
+</script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  const track = document.getElementById('projectsTrack');
+  const prev = document.getElementById('projectsPrev');
+  const next = document.getElementById('projectsNext');
+  if (!track || !prev || !next) return;
+
+  const step = () => {
+    const item = track.querySelector('.project-item');
+    return item.offsetWidth + 24; // card width + gap
+  };
+
+  prev.addEventListener('click', () => track.scrollBy({ left: -step(), behavior: 'smooth' }));
+  next.addEventListener('click', () => track.scrollBy({ left: step(), behavior: 'smooth' }));
+
+  function updateArrows() {
+    prev.disabled = track.scrollLeft <= 4;
+    next.disabled = track.scrollLeft + track.clientWidth >= track.scrollWidth - 4;
+  }
+
+  track.addEventListener('scroll', updateArrows, { passive: true });
+  window.addEventListener('resize', updateArrows);
+  updateArrows();
 });
 </script>
 </body>
