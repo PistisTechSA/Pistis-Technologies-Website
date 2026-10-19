@@ -491,6 +491,34 @@
   }
 }
 
+
+/* REVIEWS: desktop horizontal carousel */
+@media (min-width: 769px) {
+  .reviews-scroll {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    gap: 24px;
+    scroll-snap-type: x proximity;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+  .reviews-scroll::-webkit-scrollbar {
+    display: none;
+  }
+
+  .reviews-scroll > .col-md-4 {
+    flex: 0 0 calc((100% - 48px) / 3);
+    max-width: calc((100% - 48px) / 3);
+    scroll-snap-align: start;
+  }
+}
+
+
 /* Partnership */
 .partner-card {
   border-radius: 12px;
